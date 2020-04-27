@@ -1,8 +1,15 @@
 ## DEV Bot Discord
 
-> BOT multifuncional desenvolvido em node e de código aberto.
+BOT multifuncional desenvolvido em node e de código aberto.
 
 Pode ser útil pra você usar a [documentação oficial](https://discord.js.org/#/) da biblioteca [Discord.js](http://www.npmjs.com/package/discord.js)
+
+Baixe o repositório e use
+
+    npm init
+
+crie um arquivo **config.json** [com essa estrutura](#-Programando-o-Bot)
+enjoy!
 
 ----
 # Tutorial
@@ -59,3 +66,23 @@ Se você for iniciante, pode usar os comandos
     npm i fs --save
 
 para instalar as bibliotecas na pasta do seu projeto e poder usá-las :)
+
+#### BOT.js
+
+Criamos o arquivo "bot.js" e ele terá toda a estrutura pro bot funcionar.
+
+Para um bot funcionar você só precisa inserir dentro do arquivo bot.js
+
+    const Discord = require('discord.js');
+    const client = new Discord.Client();
+    const config = require('./config.json');
+    client.login(config.token);
+
+Ao executar (**node .** no terminal com o diretório do projeto) você verá o seu Bot online.
+
+Podemos inserir o trecho
+
+    client.on('ready', ()=>{console.log("Online!!")})
+
+para imprimir a mensagem "Online!!" quando o bot estiver funcionando.
+
