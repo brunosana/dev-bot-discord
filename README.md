@@ -8,7 +8,7 @@ Baixe o repositório e use
 
     npm init
 
-crie um arquivo **config.json** [com essa estrutura](#-Programando-o-Bot)
+crie um arquivo **config.json** [com essa estrutura](#programando-o-bot)
 enjoy!
 
 ----
